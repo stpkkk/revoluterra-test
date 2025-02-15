@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 @import 'tailwindcss';
 
-@font-face {
+/* @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter_24pt-Regular.ttf');
   font-weight: 400;
@@ -26,17 +28,25 @@
   src: url('../fonts/Inter_24pt-Bold.ttf');
   font-weight: 700;
   font-display: swap;
-}
+} */
 
 @theme {
   --font-primary: 'Inter', 'serif';
   --color-bg-grey: #f6f5fa;
+  --color-border-grey: #898b94;
+  --color-border-lightGrey: #dcdde5;
   --color-primary: #2a2c36;
   --color-secondary: #636570;
-  --color-green: #8fba3e;
+  --color-light-green: #8fba3e;
+  --color-green: #74b200;
   /* --shadow-primary: 0 7px 25px rgba(100, 100, 111, 0.2); */
 }
 
 body {
-  @apply font-primary text-primary bg-bg-grey;
+  @apply text-primary bg-bg-grey font-primary px-8 leading-[140%];
+}
+
+h1,
+h2 {
+  @apply font-semibold;
 }
