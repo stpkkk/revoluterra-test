@@ -1,1 +1,42 @@
 @import 'tailwindcss';
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_24pt-Regular.ttf');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_24pt-Medium.ttf');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_24pt-SemiBold.ttf');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_24pt-Bold.ttf');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@theme {
+  --font-primary: 'Inter', 'serif';
+  --color-bg-grey: #f6f5fa;
+  --color-primary: #2a2c36;
+  --color-secondary: #636570;
+  --color-green: #8fba3e;
+  /* --shadow-primary: 0 7px 25px rgba(100, 100, 111, 0.2); */
+}
+
+body {
+  @apply font-primary text-primary bg-bg-grey;
+}
