@@ -39,7 +39,8 @@
   --color-secondary: #636570;
   --color-light-green: #8fba3e;
   --color-green: #74b200;
-  /* --shadow-primary: 0 7px 25px rgba(100, 100, 111, 0.2); */
+  --color-red: #f33939
+    /* --shadow-primary: 0 7px 25px rgba(100, 100, 111, 0.2); */;
 }
 
 body {
