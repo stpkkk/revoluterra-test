@@ -1,5 +1,6 @@
 import Advertisements from './components/Advertisements';
 import Revenues from './components/Revenues';
+import ServiceLevel from './components/Servicelevel';
 import { Statistics } from './components/Statistics';
 import { Advertisement } from './types/advertisement';
 import { Revenue } from './types/revenue';
@@ -25,9 +26,10 @@ function App() {
 
       <Statistics />
 
-      <div className="mt-4 grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-4 mt-4">
         <Revenues revenues={revenues} />
         <Advertisements advertisements={advertisements} />
+        <ServiceLevel />
       </div>
     </div>
   );

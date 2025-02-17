@@ -50,3 +50,23 @@ h1,
 h2 {
   @apply font-semibold;
 }
+
+.range-input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 16px;
+  border-radius: 9999px;
+  outline: none;
+}
+
+/* .range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: white;
+  border: 6px solid #74b200;
+  border-radius: 50%;
+  cursor: pointer;
+} */
