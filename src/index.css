@@ -1,34 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
 @import 'tailwindcss';
 
-/* @font-face {
+@font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter_24pt-Regular.ttf');
+  src: url('../src/assets/fonts/Inter_24pt-Regular.ttf');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter_24pt-Medium.ttf');
+  src: url('../src/assets/fonts/Inter_24pt-Medium.ttf');
   font-weight: 500;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter_24pt-SemiBold.ttf');
+  src: url('../src/assets/fonts/Inter_24pt-SemiBold.ttf');
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Inter';
-  src: url('../fonts/Inter_24pt-Bold.ttf');
+  src: url('../src/assets/fonts/Inter_24pt-Bold.ttf');
   font-weight: 700;
   font-display: swap;
-} */
+}
 
 @theme {
   --font-primary: 'Inter', 'serif';
