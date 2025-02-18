@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Tooltip } from './Tooltip';
 import RangeInput from './RangeInput';
+import Card from './Card';
 
 export default function ServiceLevel() {
   const [level, setLevel] = useState<number>(100);
@@ -8,13 +8,12 @@ export default function ServiceLevel() {
   function handleChangeLevel(e: React.ChangeEvent<HTMLInputElement>) {
     setLevel(+e.target.value);
   }
-
   return (
-    <article className="relative p-8 bg-white rounded-lg">
-      <Tooltip text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit necessitatibus ipsam rerum odio, vero quaerat tenetur neque placeat repudiandae quae!" />
-
-      <h2 className="text-2xl">Уровень сервиса</h2>
-
+    <Card
+      title="Уровень сервиса"
+      isTooltip={true}
+      tooltipText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, unde?"
+    >
       <div className="mt-6 flex min-w-[55px] place-items-baseline gap-2">
         <span className="text-2xl font-bold">{level}%</span>
         <span className="text-secondary text-xs"> За 30 дней</span>
@@ -26,6 +25,7 @@ export default function ServiceLevel() {
           level={level}
           min="0"
           max="100"
+          label="Уровень сервиса"
           handleChange={handleChangeLevel}
           thumbColor="green"
           trackGradientColorStart="#BFBF00"
@@ -38,6 +38,6 @@ export default function ServiceLevel() {
       <p className="text-secondary text-[13px]">
         Спасибо, что следуете правилам, — за это положены преимущества
       </p>
-    </article>
+    </Card>
   );
 }

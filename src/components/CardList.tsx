@@ -1,4 +1,5 @@
 import React from 'react';
+import Card from './Card';
 
 interface Item {
   id: number;
@@ -15,8 +16,7 @@ interface CardListProps {
 
 export default function CardList({ title, items, renderItem }: CardListProps) {
   return (
-    <article className="rounded-lg bg-white p-8">
-      <h2 className="text-2xl">{title}</h2>
+    <Card title={title}>
       <ul className="mt-2.5 list-decimal">
         {items.map((item, index) => (
           <li
@@ -29,6 +29,6 @@ export default function CardList({ title, items, renderItem }: CardListProps) {
           </li>
         ))}
       </ul>
-    </article>
+    </Card>
   );
 }

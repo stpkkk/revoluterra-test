@@ -38,35 +38,9 @@
   --color-secondary: #636570;
   --color-light-green: #8fba3e;
   --color-green: #74b200;
-  --color-red: #f33939
-    /* --shadow-primary: 0 7px 25px rgba(100, 100, 111, 0.2); */;
+  --color-red: #f33939;
 }
 
 body {
-  @apply text-primary bg-bg-grey font-primary px-8 leading-[140%];
+  @apply text-primary bg-bg-grey font-primary px-8 leading-[140%] antialiased;
 }
-
-h1,
-h2 {
-  @apply font-semibold;
-}
-
-.range-input {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 16px;
-  border-radius: 9999px;
-  outline: none;
-}
-
-/* .range-input::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 28px;
-  height: 28px;
-  background: white;
-  border: 6px solid #74b200;
-  border-radius: 50%;
-  cursor: pointer;
-} */

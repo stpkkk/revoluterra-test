@@ -25,7 +25,7 @@ export function Tooltip({ text }: TooltipProps) {
         />
       </button>
       {isVisible && (
-        <div className="text-primary absolute z-10 w-64 p-2 mt-2 text-sm bg-white rounded-lg shadow-lg">
+        <div className="text-primary absolute right-0 z-10 w-64 p-2 mt-2 text-sm bg-white rounded-lg shadow-2xl">
           {text}
         </div>
       )}
