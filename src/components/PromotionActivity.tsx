@@ -14,6 +14,7 @@ export default function PromotionActivity() {
       title="Активность продвижения"
       isTooltip={true}
       tooltipText="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur, corrupti?"
+      border="#f33939"
     >
       <div className="mt-6 flex min-w-[55px] place-items-baseline gap-2">
         <span className="text-2xl font-bold">{level}</span>

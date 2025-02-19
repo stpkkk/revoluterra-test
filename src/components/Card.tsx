@@ -6,6 +6,7 @@ type CardProps = {
   title: string;
   isTooltip?: boolean;
   tooltipText?: string;
+  border?: string;
 };
 
 export default function Card({
@@ -13,9 +14,13 @@ export default function Card({
   title,
   isTooltip,
   tooltipText,
+  border = 'transparent',
 }: CardProps) {
   return (
-    <article className="hover:border-red border-transparen hover:border relative p-8 bg-white border rounded-lg">
+    <article
+      className={`relative rounded-lg bg-white p-8`}
+      style={{ border: `1px solid ${border}` }}
+    >
       {isTooltip && tooltipText && <Tooltip text={tooltipText} />}
 
       <h2 className="text-2xl font-semibold">{title}</h2>

@@ -1,33 +1,28 @@
 import Advertisements from './components/Advertisements';
 import PromotionActivity from './components/PromotionActivity';
 import Revenues from './components/Revenues';
-import ServiceLevel from './components/Servicelevel';
+import ServiceLevel from './components/ServiceLevel';
+import Spinner from './components/Spinner';
 import { Statistics } from './components/Statistics';
-import { Advertisement } from './types/advertisement';
-import { Revenue } from './types/revenue';
+import useFetchData from './hooks/useFetchData';
 
 function App() {
-  const revenues: Revenue[] = [
-    { id: 0, title: 'Всего', value: 56000 },
-    { id: 1, title: 'За последний год', value: 48000 },
-    { id: 2, title: 'За последний месяц', value: 8600 },
-    { id: 3, title: 'За последнюю неделю', value: 2000 },
-  ];
+  const { data, loading, error } = useFetchData();
 
-  const advertisements: Advertisement[] = [
-    { id: 0, color: '#74B200', title: 'Активные', value: 14 },
-    { id: 1, color: '#FF9F31', title: 'Неактивные', value: 2 },
-    { id: 2, color: '#636570', title: 'Черновики', value: 3 },
-    { id: 3, color: '#898B94', title: 'Проданные', value: 0 },
-  ];
+  if (loading) {
+    return <Spinner />;
+  }
 
+  if (error) {
+    return <div>Ошибка: {error}</div>;
+  }
   return (
     <div className="my-8 flex w-full max-w-[876px] flex-col">
       <h1 className="text-[32px] font-semibold">Сводка</h1>
       <Statistics />
       <div className="grid grid-cols-2 gap-4 mt-4">
-        <Revenues revenues={revenues} />
-        <Advertisements advertisements={advertisements} />
+        <Revenues revenues={data?.revenues || []} />
+        <Advertisements advertisements={data?.advertisements || []} />
         <ServiceLevel />
         <PromotionActivity />
       </div>

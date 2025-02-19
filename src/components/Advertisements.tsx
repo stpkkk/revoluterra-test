@@ -1,5 +1,6 @@
 import { Advertisement } from '../types/advertisement';
 import CardList from './CardList';
+import careRight from '../assets/icons/CaretRight.svg';
 
 interface AdvertisementsProps {
   advertisements: Advertisement[];
@@ -22,6 +23,13 @@ export default function Advertisements({
           )}
           <span className="text-secondary">{advertisement.title}</span>
           <span className="ml-auto font-semibold">{advertisement.value}</span>
+          <img
+            src={careRight}
+            className="ml-1"
+            alt="Раскрыть"
+            width={16}
+            height={16}
+          />
         </>
       )}
     />
