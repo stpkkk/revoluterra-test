@@ -28,7 +28,7 @@ export function Statistics() {
     <div className="flex flex-col p-8 mt-6 bg-white rounded-lg">
       <div>
         <div className="flex items-center justify-between">
-          <h2 className="text-2xl">Статистика за 21 — 27 дек</h2>
+          <h2 className="text-2xl font-semibold">Статистика за 21 — 27 дек</h2>
           <button className="border-border-grey cursor-pointer rounded-lg border px-[24px] py-[11px] text-[13px] font-medium">
             Больше статистики
           </button>

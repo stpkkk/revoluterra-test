@@ -18,7 +18,7 @@ export default function Card({
 }: CardProps) {
   return (
     <article
-      className={`relative rounded-lg bg-white p-8`}
+      className={`relative min-h-[297px] rounded-lg bg-white p-8`}
       style={{ border: `1px solid ${border}` }}
     >
       {isTooltip && tooltipText && <Tooltip text={tooltipText} />}
