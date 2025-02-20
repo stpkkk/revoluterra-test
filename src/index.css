@@ -41,6 +41,14 @@
   --color-red: #f33939;
 }
 
+input[type='range']::-webkit-slider-thumb {
+  border-color: var(--thumb-color);
+}
+
+input[type='range']::-moz-range-thumb {
+  border-color: var(--thumb-color);
+}
+
 body {
   @apply text-primary bg-bg-grey font-primary px-8 leading-[140%] antialiased;
 }
