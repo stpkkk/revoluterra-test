@@ -30,7 +30,7 @@ export default function PromotionActivity() {
           step={0.1}
           label="Активность продвижения"
           handleChange={handleChangeLevel}
-          thumbColor="red"
+          thumbColor="#f33939"
           trackGradientColorStart="#f33939"
           trackGradientColorEnd="#f39039"
         />

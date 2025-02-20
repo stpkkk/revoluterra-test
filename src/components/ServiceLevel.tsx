@@ -27,7 +27,7 @@ export default function ServiceLevel() {
           max="100"
           label="Уровень сервиса"
           handleChange={handleChangeLevel}
-          thumbColor="green"
+          thumbColor="#74b200"
           trackGradientColorStart="#BFBF00"
           trackGradientColorEnd="#7DBF00"
         />
