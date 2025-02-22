@@ -18,7 +18,9 @@ export default function CardList({ items, renderItem }: CardListProps) {
       {items.map((item, index) => (
         <li
           className={`flex items-center justify-between py-[14px] text-sm ${
-            index !== items.length - 1 && 'border-b-border-grey border-b'
+            index !== items.length - 1
+              ? 'border-b-border-grey border-b'
+              : 'pb-2'
           }`}
           key={item.id}
         >
