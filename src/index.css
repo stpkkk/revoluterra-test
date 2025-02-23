@@ -50,5 +50,5 @@ input[type='range']::-moz-range-thumb {
 }
 
 body {
-  @apply text-primary bg-bg-grey font-primary px-8 leading-[140%] antialiased;
+  @apply text-primary bg-bg-grey font-primary leading-[140%] antialiased;
 }
